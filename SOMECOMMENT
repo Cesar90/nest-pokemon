@@ -1,0 +1,1 @@
+nest g pi common/pipes/parseMongoId --no-spec

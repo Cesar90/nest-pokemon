@@ -12,7 +12,7 @@ import { JoiValidationSchema } from './config/joi.validatio';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      // load: [ EnvConfiguration ],
+      load: [ EnvConfiguration ],
       validationSchema: JoiValidationSchema
     }),//Put top
     ServeStaticModule.forRoot({

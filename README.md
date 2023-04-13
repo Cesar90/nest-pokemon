@@ -37,3 +37,22 @@ http://localhost:3000/api/v2/seed
 
 - MongoDB
 - Nest
+
+# Production Build
+
+1. Create the `.env.prod` file
+2. Fill the variables of env of prod
+3. Create the image
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+# Note
+
+Heroku redeploy without changes:
+
+```
+git commit --allow-empty -m "Trigger Heroku deploy"
+git push heroku <master|main>
+```

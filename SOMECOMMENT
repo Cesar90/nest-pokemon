@@ -1,2 +1,13 @@
 nest g pi common/pipes/parseMongoId --no-spec
 nest g res seed --no-spec
+
+Build
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+Run
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+
+Note
+By default, docker-compose uses the .env file, hence if you have the .env file and set it up with its variables of prd env
+
+docker-compose -f docker-compose.prod.yaml up --build
